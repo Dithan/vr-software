@@ -4,26 +4,29 @@ Sistema de notificações desenvolvido com Flutter (frontend) e Go (backend), ut
 
 ## Tecnologias Utilizadas
 
-Backend: Go + Gin Framework + RabbitMQ
-Frontend: Flutter + HTTP Package
-Mensageria: RabbitMQ (CloudAMQP)
+- **Backend**: Go + Gin Framework + RabbitMQ
+- **Frontend**: Flutter + HTTP Package
+- **Mensageria**: RabbitMQ (CloudAMQP)
 
 ## Como Executar
 
-Pré-requisitos
+### Pré-requisitos
 
-Go 1.19+ instalado
-Flutter 3.0+ instalado
+- Go 1.19+ instalado
+- Flutter 3.0+ instalado
 
-1. Backend (Go)
-   bashcd backend
-   go mod tidy
-   go run main.go
-   O servidor estará disponível em http://localhost:8080
-2. Frontend (Flutter)
-   bashcd frontend
-   flutter pub get
-   flutter run
+### 1. Backend (Go)
+
+- bash cd backend
+- go mod tidy
+- go run main.go
+- O servidor estará disponível em http://localhost:8080
+
+### 2. Frontend (Flutter)
+
+- bash cd frontend
+- flutter pub get
+- flutter run
 
 ## API Endpoints
 
@@ -32,8 +35,8 @@ GET /api/notificacao/status/{id} - Consultar status
 
 ## Fluxo da Aplicação
 
-Flutter envia mensagem para o backend
-Backend publica mensagem no RabbitMQ
-Consumidor processa mensagem assincronamente
-Frontend consulta status periodicamente
-Status é atualizado em tempo real na interface
+- Flutter envia mensagem para o backend
+- Backend publica mensagem no RabbitMQ
+- Consumidor processa mensagem assincronamente
+- Frontend consulta status periodicamente
+- Status é atualizado em tempo real na interface
