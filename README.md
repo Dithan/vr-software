@@ -30,8 +30,8 @@ Sistema de notificações desenvolvido com Flutter (frontend) e Go (backend), ut
 
 ## API Endpoints
 
-POST /api/notificar - Enviar notificação
-GET /api/notificacao/status/{id} - Consultar status
+- POST /api/notificar - Enviar notificação
+- GET /api/notificacao/status/{id} - Consultar status
 
 ## Fluxo da Aplicação
 
